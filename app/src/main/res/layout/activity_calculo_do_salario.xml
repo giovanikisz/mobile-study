@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/position"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".calculoDoSalario">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Digite seu salário (R$):"
+            android:textColor="#000000"
+            android:textSize="34sp" />
+
+        <EditText
+            android:id="@+id/edt_salario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Qual será o percentual?"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radio_40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="40%" />
+
+            <RadioButton
+                android:id="@+id/radio_45"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="45%" />
+
+            <RadioButton
+                android:id="@+id/radio_50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="50%" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnNovoSalario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="calcularSalario"
+            android:text="MOSTRAR NOVO SALÁRIO" />
+
+        <TextView
+            android:id="@+id/novo_salario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="telaQuestao4"
+            android:text="Q4" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

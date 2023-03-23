@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:background="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:text="Calculadora"
+            android:textAlignment="center"
+            android:textSize="44sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_num1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Digite o primeiro valor"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edt_num2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Digite o segundo valor"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btn_somar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="somar"
+            android:text="Somar" />
+
+        <Button
+            android:id="@+id/btn_dividir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="dividir"
+            android:text="Dividir" />
+
+        <Button
+            android:id="@+id/btn_subtrair"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="subtrair"
+            android:text="Subtrair" />
+
+        <Button
+            android:id="@+id/btn_multiplicar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="multiplicar"
+            android:text="Multiplicar" />
+
+        <EditText
+            android:id="@+id/edt_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/questao2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="telaQuestao2"
+            android:text="Q2" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
